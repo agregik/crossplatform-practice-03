@@ -1,0 +1,23 @@
+{
+  "name": "electron-file-explorer",
+  "version": "1.0.0",
+  "description": "Практическая работа №3: файловый обозреватель на Electron (вариант 3 — сохранение заметки)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": ["electron", "crossplatform", "practice"],
+  "author": "Боков Никита Евгеньевич, ТРПО23-2",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^45.0.0"
+  },
+  "build": {
+    "appId": "ru.fa.student.fileexplorer",
+    "productName": "Electron File Explorer",
+    "win": { "target": "nsis" },
+    "linux": { "target": "AppImage" },
+    "mac": { "target": "dmg" }
+  }
+}
