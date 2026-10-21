@@ -6,7 +6,7 @@ const fileList = document.getElementById('file-list');
 const note = document.getElementById('note');
 const noteInfo = document.getElementById('note-info');
 const btnSave = document.getElementById('btn-save');
-const status = document.getElementById('status');
+const statusEl = document.getElementById('status');
 
 async function showDir(highlight) {
   try {
@@ -26,8 +26,8 @@ async function showDir(highlight) {
 }
 
 function setStatus(text, kind) {
-  status.textContent = text;
-  status.className = kind;
+  statusEl.textContent = text;
+  statusEl.className = kind;
 }
 
 btnList.addEventListener('click', () => showDir());
