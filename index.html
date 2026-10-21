@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'">
+  <title>Electron File Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Electron File Explorer</h1>
+    <p class="author">Боков Никита Евгеньевич · группа ТРПО23-2 · вариант 3</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Содержимое каталога</h2>
+      <button id="btn-list">Показать содержимое каталога</button>
+      <p id="dir-path" class="muted"></p>
+      <ul id="file-list"></ul>
+    </section>
+
+    <section class="panel">
+      <h2>Заметка</h2>
+      <textarea id="note" placeholder="Введите текст заметки…"></textarea>
+      <div class="row">
+        <button id="btn-save">Сохранить заметку</button>
+        <span id="note-info" class="muted">0 символов</span>
+      </div>
+      <p id="status"></p>
+    </section>
+  </main>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
